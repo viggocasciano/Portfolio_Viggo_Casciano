@@ -25,6 +25,8 @@ body{
     display: flex;
     flex-direction: column;
     background-color: rgba(158, 158, 158, 0.034);
+    width: 40vw;
+    height: 22vh;
     border-radius: 1vw;
     align-items: center;
     justify-content: center;
@@ -37,7 +39,7 @@ body{
   text-transform: uppercase;
   font-weight: 1000;
   color: white;
-  font-size: 7vh;
+  font-size: 8vh;
   transition: color 0.3s ease-in-out;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -48,7 +50,7 @@ body{
 }
 .titre_titre{
   color: white;
-  font-size: 2vh;
+  font-size: 3vh;
   transition: color 0.3s ease-in-out;
   padding-bottom: 0.5vh;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -60,7 +62,7 @@ body{
 }
 .contact{
   color: #cabebe;
-  font-size: 1.5vh;
+  font-size: 2vh;
   padding-bottom: 0.5vh;
 }
 .contact a {
