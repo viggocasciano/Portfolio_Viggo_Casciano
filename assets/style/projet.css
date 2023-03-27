@@ -60,8 +60,10 @@
     background-color: rgba(0, 0, 0, 0.98);
     box-shadow: 0 0 0.7vh #fff;
     text-shadow: 0 0 0.3vh #fff;
+    cursor:pointer;
 }
 .projet:hover{
+    box-shadow: 0 0 3vh #4fc3dc;
     scale : 1.05;
     transition: 0.5s;
 }
