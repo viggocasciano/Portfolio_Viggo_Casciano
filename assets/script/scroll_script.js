@@ -1,6 +1,5 @@
 // récupère la nav bar et la met dans une variable
 var navBar = document.getElementById("navBar");
-let _1vh = Math.round(window.innerHeight / 100);
 var img_footer = document.getElementById("img_footer");
 var img_footer_2 = document.getElementById("img_footer_top");
 var pres = document.getElementById("pres");
@@ -14,6 +13,7 @@ var visible3 = document.getElementById("visible3");
 var visible4 = document.getElementById("visible4");
 
 window.onload = function() {
+  let _1vh = Math.round(window.innerHeight / 100);
   window.scrollTo({
     top:0 * _1vh,
     behavior: "smooth"});
@@ -22,6 +22,7 @@ window.onload = function() {
 // si on a scrollé de 98vh alors on ajoute la classe "navBarScroll" à la nav bar, et on l'enlève si on scroll en haut
 window.addEventListener("scroll", function () {
   const rect14 = visible4.getBoundingClientRect();
+  let _1vh = Math.round(window.innerHeight / 100);
 
   if (window.scrollY > 98 * _1vh) {
     navBar.classList.add("navbarScroll");
@@ -32,6 +33,7 @@ window.addEventListener("scroll", function () {
 
 // quand on click sur img_footer, on scroll dans 103vh
 img_footer.addEventListener("click", function () {
+  let _1vh = Math.round(window.innerHeight / 100);
   // on scroll dans 103vh avec un delay de 0.5s
   const rect1 = visible1.getBoundingClientRect();
   const rect2 = visible2.getBoundingClientRect();
@@ -58,6 +60,7 @@ img_footer.addEventListener("click", function () {
 });
 
 img_footer_2.addEventListener("click", function () {
+  let _1vh = Math.round(window.innerHeight / 100);
   const rect12 = visible2.getBoundingClientRect();
   const rect13 = visible3.getBoundingClientRect();
   const rect14 = visible4.getBoundingClientRect();
@@ -86,6 +89,7 @@ img_footer_2.addEventListener("click", function () {
 });
 
 accu.addEventListener("click", function () {
+  let _1vh = Math.round(window.innerHeight / 100);
   img_footer_2.style.display = "none"
   img_footer.style.display = "block"
   window.scrollTo({
@@ -95,6 +99,7 @@ accu.addEventListener("click", function () {
 });
 // quand on click sur pres, on scroll dans 103vh
 pres.addEventListener("click", function () {
+  let _1vh = Math.round(window.innerHeight / 100);
   img_footer_2.style.display = "block"
   img_footer.style.display = "block"
   
@@ -107,6 +112,7 @@ pres.addEventListener("click", function () {
 
   // quand on click sur comp, on scroll dans 103vh
 comp.addEventListener("click", function () {
+  let _1vh = Math.round(window.innerHeight / 100);
   img_footer_2.style.display = "block"
   img_footer.style.display = "block"
     
@@ -117,6 +123,7 @@ comp.addEventListener("click", function () {
       });
     });
 proj.addEventListener("click", function () {
+  let _1vh = Math.round(window.innerHeight / 100);
       
         // on scroll dans 103vh avec un delay de 0.5s
         img_footer.style.display = "none"
