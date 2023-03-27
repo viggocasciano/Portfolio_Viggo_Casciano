@@ -4,6 +4,11 @@ var s3 = document.getElementById("s3");
 var s4 = document.getElementById("s4");
 var s5 = document.getElementById("s5");
 var s6 = document.getElementById("s6");
+var cv = document.getElementById("cv");
+
+cv.addEventListener("click", function(){
+    window.open("../assets/pdf/CV_Viggo_Casciano.pdf");
+});
 
 // lorsqu'on clique sur s1 on telecharge le fichier s1.pdf
 s1.addEventListener("click", function(){
