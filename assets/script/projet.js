@@ -22,6 +22,5 @@ projet3.addEventListener("click", function(){
 
 // lorsqu'on clique sur projet4 on telecharge le fichier projet4.pdf
 projet4.addEventListener("click", function(){
-    alert("Projet pas déployé, envoie sur la page GITLAB.");
-    window.open("https://forge.univ-lyon1.fr/p2103919/chessn");
+    window.open("https://viggocascianochess.netlify.app");
 });
