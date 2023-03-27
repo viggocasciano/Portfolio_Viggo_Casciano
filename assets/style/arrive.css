@@ -1,0 +1,76 @@
+body{
+  overflow: hidden;
+}
+.pages{
+  z-index: 1000;
+}
+.premier_page{
+  background-color: rgb(12, 12, 12);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.main_arrivee{
+  z-index: 999;
+  /* met au centre verticalement */
+  margin-top: 35vh;
+  width:100vw;
+  height: 20vh;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+}
+  
+.titre{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(158, 158, 158, 0.034);
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: center;
+    padding : 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 999;
+}
+
+.titre h1{
+  text-transform: uppercase;
+  font-weight: 1000;
+  color: white;
+  font-size: 7vh;
+  transition: color 0.3s ease-in-out;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+.titre_titre{
+  color: white;
+  font-size: 2vh;
+  transition: color 0.3s ease-in-out;
+  padding-bottom: 0.5vh;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+.contact{
+  color: #cabebe;
+  font-size: 1.5vh;
+  padding-bottom: 0.5vh;
+}
+.contact a {
+  color: #ff2d75;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.presentation{
+  background-color: rgb(12, 12, 12);
+  width: 100vw;
+  height: 100vh;
+}

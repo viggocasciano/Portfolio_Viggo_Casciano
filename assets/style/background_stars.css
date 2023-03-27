@@ -1,0 +1,30 @@
+.background_2{
+    z-index: 10;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden
+}
+i{
+    position:absolute;
+    height: 200px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: stars 10s linear infinite
+}
+i:nth-child(2n+1){
+    background:linear-gradient(transparent, #4fc3dc);
+}
+i:nth-child(2n+2){
+    background:linear-gradient(transparent, #ff2d75);
+}
+
+@keyframes stars{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(200vh);
+    }
+}

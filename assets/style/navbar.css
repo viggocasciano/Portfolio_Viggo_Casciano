@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    background-color:rgba(0, 0, 0, 0.2);
+    font-family: 'Montserrat', sans-serif;
+    z-index: 999;
+    transition: 0.3s ease-in-out;
+  }
+  .navbarScroll{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    background-color:rgba(0, 0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    z-index: 999;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar a {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: #cabebe;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+    cursor:pointer;
+    /* a pas selectionnable */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+  }
+  
+  .navbar a:hover {
+    color: #ff2d75;
+  }
+
+  
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff2d75;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
